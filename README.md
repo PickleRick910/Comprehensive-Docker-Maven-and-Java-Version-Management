@@ -131,3 +131,10 @@ mvn clean package -Pjava17
 docker build --target build-java8 -t helloworld-java8 .
 docker build --target build-java11 -t helloworld-java11 .
 docker build --target build-java17 -t helloworld-java17 .
+
+
+
+//cleanup 
+
+docker image rm helloworld-java8 helloworld-java11 helloworld-java17
+
