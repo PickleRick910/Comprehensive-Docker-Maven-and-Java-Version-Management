@@ -116,3 +116,18 @@ Building and running the Maven project for different Java versions.
 Building Docker images and running containers for each Java version.
 Document any challenges faced and how you overcame them, plus any notable observations about the application behavior under different Java versions.
 Provide commands for cleaning up after testing: stopping and removing containers, and removing Docker images.
+
+
+
+to execute: 
+
+mvn clean package -Pjava8
+mvn clean package -Pjava11
+mvn clean package -Pjava17
+
+
+
+
+docker build --target build-java8 -t helloworld-java8 .
+docker build --target build-java11 -t helloworld-java11 .
+docker build --target build-java17 -t helloworld-java17 .
